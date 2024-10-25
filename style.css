@@ -69,7 +69,6 @@ a:hover {
 }
 
 #nosotros {
-    /* height: 400px; */
     display: grid;
     grid-template-columns: 3fr 4fr;
     background-color: black;
@@ -286,7 +285,7 @@ form button:hover {
 footer {
     display: grid;
     grid-template-columns: 3fr 2fr ;
-
+   
     padding: 0 0 0 33%;
     color: #595959;
 }
@@ -338,6 +337,23 @@ footer {
         
     }
 
+    #nosotros {
+        grid-template-columns: 1fr;
+        padding: ;
+    }
+
+    .nosotrosIzq {
+        visibility: hidden;
+    }
+
+    .nosotrosDer {
+        padding: 30px;
+    }
+
+    .serviciosHeader {
+        padding: 30px;
+    }
+
     #serviciosCajas1, #serviciosCajas2, #serviciosCajas3, #serviciosCajas4 {
         padding: 30px;
         margin-left: 0;
@@ -368,6 +384,12 @@ footer {
     #contactoImagen {
         visibility: hidden;
     }
+
+    footer {
+        padding: 0;
+    }
+
+   
 
   }
 
