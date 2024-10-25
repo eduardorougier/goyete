@@ -324,6 +324,7 @@ footer {
 @media (max-width: 1000px) {
     nav {
         height: 70px;
+        grid-template-columns: 1fr 2fr;
     }
 
     nav ul {
@@ -359,6 +360,10 @@ footer {
         margin-left: 0;
     }
 
+    #experiencia {
+        padding: 0;
+    }
+
     .experienciaCaja {
         display: grid;
         grid-template-columns: 1fr;
@@ -381,8 +386,13 @@ footer {
         }
     }
 
+    #contacto {
+        grid-template-columns: 1fr;
+    }
+
     #contactoImagen {
         visibility: hidden;
+        height: 0px;
     }
 
     footer {
