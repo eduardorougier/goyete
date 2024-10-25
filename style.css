@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+}
+
+header {
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 450px 50px;
+}
+
+.encabezado {
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 500;
+    background-color: yellow;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: auto;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+   width: 60%;
+    
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+#nosotros {
+    /* height: 400px; */
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    background-color: black;
+}
+
+.nosotrosIzq {
+    background-image: url("img/team.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+
+h2 {
+    color: yellow;
+    font-size: 32px;
+    font-weight: 350;
+    padding-bottom: 10px;
+}
+
+.nosotrosDer {
+    padding: 100px;
+
+    p {
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+
+.serviciosHeader {
+    padding: 70px 15% 10px 15%;
+
+    h2 {
+        text-align: center;
+        color: black;
+    }
+}
+
+.serviciosCajas {
+    
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+
+    img {
+        width: 45px;
+        height: 45px;
+
+    }
+
+}
+
+#serviciosCajas1 {
+    background-color: yellow;
+    padding: 30px 30% 30px 30px;
+    margin-left: 5%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+#serviciosCajas2 {
+    background-color: #D6D6D5;
+    padding: 30px 25% 30px 30px;
+    margin-left: 20%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#serviciosCajas3 {
+    background-color: #777777;
+    padding: 30px 20% 30px 30px;
+    margin-left: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    h3 {
+        color: yellow;
+    }
+
+    p { 
+        color: white;
+    }
+}
+
+#serviciosCajas4 {
+    background-color: black;
+    color: white;
+    padding: 30px 15% 30px 30px;
+    margin-left: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+#experiencia {
+    background-color: black;
+    padding: 70px 15%;
+    text-align: center;
+    
+
+    p {
+        color: white;
+    }
+}
+
+.experienciaEncabezado {
+    margin-bottom: 30px;
+}
+
+.experienciaCaja {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+
+    img {
+        width: 100%;
+        filter: grayscale(1);
+        transition: 0.5s ease-in-out;
+    }
+
+    img:hover {
+        filter: grayscale(0);
+    }
+
+    div {
+        padding: 50px;
+        color: white;
+        text-align: justify;
+    }
+
+    h3 {
+        color: yellow;
+        font-weight: 400;
+    }
+}
+
+#contacto {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    align-items: center;
+    background-color: yellow;
+    color: black;
+    overflow: hidden;
+    padding: 70px 0 ;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        color: black;
+    }
+
+    div {
+        padding: 80px;
+    }
+}
+
+
+#contacto div {
+    padding: 30px;
+}
+
+#contacto h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 350;
+    padding-bottom: 10px;
+}
+
+#contacto p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #333;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 2fr ;
+
+    padding: 0 0 0 33%;
+    color: #595959;
+}
+
+.footerIzq {
+    padding: 30px;
+
+    p {
+        padding: 3px 0;
+    }
+}
+
+.footerDer {
+    background-color: black;
+    display: grid;
+    grid-template-rows: 40px 40px;
+    padding: 30px;
+    gap: 20px;
+    
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        filter: grayscale(1);
+        transition: 0.3s ease-in-out;
+    }
+
+    img:hover {
+        filter: grayscale(0);
+    }
+}
+
+
+
+
+@media (max-width: 1000px) {
+    nav {
+        height: 70px;
+    }
+
+    nav ul {
+        display: grid;
+        grid-template-rows: 30px 30px;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        list-style: none;
+       width: 60%;
+        
+    }
+
+    #serviciosCajas1, #serviciosCajas2, #serviciosCajas3, #serviciosCajas4 {
+        padding: 30px;
+        margin-left: 0;
+    }
+
+    .experienciaCaja {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        
+    
+        img {
+            height: 250px;
+        }
+    
+        div {
+            padding: 50px;
+            color: white;
+            text-align: justify;
+        }
+    
+        h3 {
+            color: yellow;
+            font-weight: 400;
+        }
+    }
+
+    #contactoImagen {
+        visibility: hidden;
+    }
+
+  }
+
